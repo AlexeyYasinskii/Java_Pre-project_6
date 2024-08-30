@@ -17,7 +17,6 @@ public class UserServiceImpl implements UserService {
     private UserDAO userDAO;
 
     @Override
-    @Transactional
     public List<User> showAllUsers() {
         return userDAO.showAllUsers();
     }
@@ -29,7 +28,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public User showUser(int id) {
         return userDAO.showUser(id);
     }
